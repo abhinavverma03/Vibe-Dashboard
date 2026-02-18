@@ -46,7 +46,7 @@ This starts:
 │   ├── search-bar.tsx
 │   ├── item-grid.tsx
 │   └── item-card.tsx
-├── server.js             # Express.js API
+├── backend/server.js     # Express.js API
 ├── package.json
 └── .env.local            # Environment config
 ```
@@ -80,7 +80,7 @@ Health check endpoint.
 
 ### Adding Items
 
-Edit the `items` array in `server.js`:
+Edit the `items` array in `backend/server.js`:
 
 ```javascript
 const items = [
@@ -115,8 +115,9 @@ Push to GitHub, connect to Vercel, and set `NEXT_PUBLIC_API_URL` to your backend
 
 ### Backend
 
-Deploy `server.js` to services like Heroku, Railway, or Render.
+Deploy `backend/server.js` to services like Heroku, Railway, or Render.
 
 ## License
 
 MIT
+
